@@ -9,7 +9,10 @@ import { UniverSheetsFindReplacePreset } from '@univerjs/presets/preset-sheets-f
 import UniverPresetSheetsFindReplaceZhCN from '@univerjs/presets/preset-sheets-find-replace/locales/en-US';
 import { UniverSheetsSortPreset } from '@univerjs/presets/preset-sheets-sort';
 import SheetsSortZhCN from '@univerjs/presets/preset-sheets-sort/locales/zh-CN';
-
+import { UniverSheetsDataValidationPreset } from '@univerjs/presets/preset-sheets-data-validation';
+import UniverPresetSheetsDataValidationZhCN from '@univerjs/presets/preset-sheets-data-validation/locales/zh-CN';
+ 
+import '@univerjs/presets/lib/styles/preset-sheets-data-validation.css'
 import '@univerjs/presets/lib/styles/preset-sheets-core.css';
 import '@univerjs/presets/lib/styles/preset-sheets-data-validation.css';
 import '@univerjs/presets/lib/styles/preset-sheets-filter.css';
@@ -25,6 +28,7 @@ export const setUp =(container)=>{
                 UniverPresetSheetsFilterZhCN,
                 SheetsSortZhCN,
                 UniverPresetSheetsFindReplaceZhCN,
+                UniverPresetSheetsDataValidationZhCN
             ),
         },
         theme: defaultTheme,
@@ -33,6 +37,7 @@ export const setUp =(container)=>{
             UniverSheetsCorePreset({
                 container: container,
             }),
+            UniverSheetsDataValidationPreset(),
             UniverSheetsSortPreset(),
             UniverSheetsFindReplacePreset(),
         ],
